@@ -7,6 +7,10 @@ ol, ul {
   padding-left: 30px;
 }
 
+ol {
+  margin-bottom: 0;
+}
+
 .board-row:after {
   clear: both;
   content: "";
@@ -24,12 +28,12 @@ ol, ul {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  width: 100px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
   cursor: pointer;
 }
 
@@ -44,10 +48,18 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
-  max-width: 300px;
+  max-width: 550px;
   margin: 50px auto 0;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+.game-info > div {
+  font-size: 26px;
+}
+
+.game-info > ol > li:not(:last-child) {
+  margin-bottom: 3px;
 }

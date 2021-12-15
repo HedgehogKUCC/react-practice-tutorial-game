@@ -23,7 +23,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -39,7 +39,7 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }
@@ -95,6 +95,7 @@ class Game extends React.Component {
       return (
         <li key={move}>
           <button
+            style={{ cursor: pointer }}
             type="button"
             onClick={() => this.jumpTo(move)}
           >
