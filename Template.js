@@ -52,7 +52,7 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
-          <div>{/* TODO */}</div>
+          <ol>{/* TODO */}</ol>
         </div>
       </div>
     );
